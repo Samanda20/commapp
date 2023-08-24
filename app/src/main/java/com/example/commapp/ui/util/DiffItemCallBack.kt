@@ -8,6 +8,7 @@ class DiffItemCallBack: DiffUtil.ItemCallback<Coffee>() {
     override fun areItemsTheSame(oldItem: Coffee, newItem: Coffee): Boolean {
         var same = oldItem.id == newItem.id && oldItem.type == newItem.type
 //        Log.d("diffutil", "items same, result:"+same+", id:"+oldItem.id+", name:"+oldItem.name)
+        Log.d("diffutil", "this is test")
         return same
     }
 
